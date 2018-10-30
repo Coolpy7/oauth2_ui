@@ -1,0 +1,225 @@
+.loginInfo{
+  width: auto;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.topBox{
+  padding-left: 3%;
+  padding-top: 10%;
+}
+.topBox h2{
+  font-size: 14px;
+  color: #fff;
+  line-height: 3.1;
+  font-weight: normal;
+}
+.topBox h3{
+  font-size: 14px;
+  color: #fff;
+  line-height: 1;
+  font-weight: normal;
+}
+.topBox .logoBox{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+.topBox .logoBox .leftRound{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #C5C5C5;
+}
+.topBox .logoBox .leftRound img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.topBox .logoBox .centerArrow{
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.topBox .logoBox .centerArrow p{
+  font-size: 14px;
+  width: 90px;
+  color: #fff;
+}
+.topBox .logoBox .centerArrow .leftArrow{
+  width: 78px;
+  height: 10px;
+  position: relative;
+  left: 7px;
+}
+.topBox .logoBox .centerArrow .rightArrow{
+  width: 78px;
+  height: 10px;
+  margin: 4px 0 10px 0;
+  position: relative;
+  right: 1px;
+  top: 5px;
+}
+.topBox .logoBox .centerArrow span{
+  display: block;
+  content: '';
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: -5px;
+}
+.topBox .logoBox .centerArrow span.left{
+  border-right: 20px solid #F10483;
+  left: -10px;
+}
+.topBox .logoBox .centerArrow span.right{
+  border-left: 20px solid #C5C5C5;
+  right: -10px;
+}
+.topBox .logoBox .centerArrow .leftArrow{
+  background: #F10483;
+}
+.topBox .logoBox .centerArrow .rightArrow{
+  background: #C5C5C5;
+}
+
+.topBox .logoBox .rightRound{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #F10483;
+}
+.topBox .logoBox .rightRound img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.topBox .logoBox .rightRound b{
+  display: inline-block;
+  margin-bottom: -4px;
+}
+.topBox .logoBox .rightRound span{
+  font-size: 20px;
+  display: inline-block;
+  margin-top: -4px;
+}
+.topBox a{
+  font-size: 14px;
+  color: #1C95D2;
+}
+.centerBox{
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+  padding: 20px 40px;
+  background: #FDFDFD;
+}
+.centerBox .inputBox{
+  margin-bottom: 18px;
+}
+.centerBox .inputBox label{
+  width: 50px;
+  display: inline-block;
+  font-size: 14px;
+}
+.centerBox .inputBox input{
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  width: 288px;
+  height: 38px;
+  line-height: 38px;
+  padding:6px 10px;
+}
+.centerBox .inputBox input::placeholder{
+  color: #b2b2b2;
+}
+.centerBox .loginBtn{
+  padding-left: 58px;
+  margin: 8px 0 10px 0;
+}
+.centerBox .loginBtn span{
+  display: block;
+  width: 80px;
+  height: 36px;
+  color: #fff;
+  font-size: 14px;
+  background: #F10081;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* 授权信息结束 */
+.bottomBox{
+  font-size: 12px;
+  color: #fff;
+  line-height: 3;
+}
+.bottomBox i{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('../img/tips.png') no-repeat;
+  background-size: contain;
+  margin: 0 10px;
+  position: relative;
+  top: 4px;
+}
+@media screen and (min-width: 320px) and (max-width:767px){
+  .loginInfo{
+    width: 100%;
+    height: 100%;
+    top: 53%;
+  }
+  .topBox{
+    padding:0 10px;
+  }
+  .topBox .logoBox{
+    padding-left: 0;
+    justify-content: center;
+  }
+  .topBox .logoBox .leftRound{
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .topBox .logoBox .rightRound{
+    width: 90px;
+    height: 90px;
+  }
+  .topBox .logoBox .centerArrow{
+    margin: 0 10px;
+  }
+  .topBox h3{
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  .centerBox{
+    padding: 10px;
+  }
+  .centerBox .inputBox input{
+    width: 230px;
+  }
+  .centerBox .loginBtn{
+    padding-left: 54px;
+  }
+  .bottomBox{
+    display: flex;
+    line-height: 2;
+  }
+  .bottomBox i{
+    width: 18px;
+    height: 18px;
+  }
+  .bottomBox span{
+    flex: 1;
+    display: inline-block;
+  }
+  .centerBox ul{
+    padding: 10px 30px;
+  }
+}

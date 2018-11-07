@@ -1,6 +1,6 @@
 import Axios from "axios"
 
-const baseURL = "https://auth2.widora.cn";
+const baseURL = "https://auth.widora.cn";
 
 global.constants = {
     website:baseURL,

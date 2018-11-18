@@ -172,9 +172,11 @@ class ExtendedTables extends React.Component {
     loadData() {
         http.get("/api/v1/forms").then(res => {
             if (res.data.ok) {
-                this.setState({
-                    forms: res.data.data
-                })
+                if (res.data.data.length > 0){
+                    this.setState({
+                        forms: res.data.data
+                    })
+                }
             } else {
                 this.setState({
                     alertcolor: "danger",

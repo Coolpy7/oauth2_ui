@@ -98,7 +98,7 @@ class Dashboard extends React.Component {
                             avatar={this.state.uinfo.avatar != null?this.state.uinfo.avatar:avatar}
                             subtitle={this.state.uinfo.rule}
                             title={this.state.uinfo.name}
-                            // userid={this.state.uinfo.uid}
+                            userid={this.state.uinfo.uid}
                             phone={this.state.uinfo.phone}
                             mail={this.state.uinfo.mail}
                             description={this.state.uinfo.remark}

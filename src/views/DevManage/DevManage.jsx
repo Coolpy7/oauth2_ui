@@ -43,6 +43,8 @@ class ExtendedTables extends React.Component {
             safe_download: "",
             safe_socket: "",
             app_id: "",
+            discourse_sso_secret: "",
+            discourse_sso_admin: "",
         };
         // this.handleAlert = this.handleAlert.bind(this);
     }
@@ -167,6 +169,8 @@ class ExtendedTables extends React.Component {
             safe_upload: this.state.safe_upload,
             safe_download: this.state.safe_download,
             safe_socket: this.state.safe_socket,
+            discourse_sso_secret: this.state.discourse_sso_secret,
+            discourse_sso_admin: this.state.discourse_sso_admin,
         }).then(res => {
             if (res.data.ok) {
                 this.setState({
@@ -194,6 +198,8 @@ class ExtendedTables extends React.Component {
             safe_upload: this.state.safe_upload,
             safe_download: this.state.safe_download,
             safe_socket: this.state.safe_socket,
+            discourse_sso_secret: this.state.discourse_sso_secret,
+            discourse_sso_admin: this.state.discourse_sso_admin,
         }).then(res => {
             if (res.data.ok) {
                 this.setState({
@@ -350,6 +356,14 @@ class ExtendedTables extends React.Component {
                                                 <small className={classes.tdNameSmall}>
                                                   App安全WebSocket域名：{i.safe_socket}
                                                 </small>
+                                                <br/>
+                                                <small className={classes.tdNameSmall}>
+                                                  Discourse论坛SSO_Secret：{i.discourse_sso_secret}
+                                                </small>
+                                                <br/>
+                                                <small className={classes.tdNameSmall}>
+                                                  Discourse论坛SSO管理员ID(填写本站UID)：{i.discourse_sso_admin}
+                                                </small>
                                             </span>,
                                             <Button color="info" customClass={classes.actionButton} onClick={
                                                 () => {
@@ -362,6 +376,8 @@ class ExtendedTables extends React.Component {
                                                         safe_download: i.safe_download,
                                                         safe_socket: i.safe_socket,
                                                         app_id: i.app_id,
+                                                        discourse_sso_secret: i.discourse_sso_secret,
+                                                        discourse_sso_admin: i.discourse_sso_admin,
                                                         showAdd: true,
                                                         eora: "e",
                                                     })
@@ -387,6 +403,8 @@ class ExtendedTables extends React.Component {
                                 name: "",
                                 remark: "",
                                 avatar: "",
+                                discourse_sso_secret: "",
+                                discourse_sso_admin:"",
                                 safe_request: "",
                                 safe_upload: "",
                                 safe_download: "",
@@ -550,6 +568,50 @@ class ExtendedTables extends React.Component {
                                         onChange: event =>
                                             this.change(event, "safe_socket", "safe_socket"),
                                         value: this.state.safe_socket
+                                    }}
+                                />
+                                <CustomInput
+                                    success={this.state.nicknameState === "success"}
+                                    error={this.state.nicknameState === "error"}
+                                    labelText={
+                                        <span>
+                                          Discourse论坛SSO_Secret
+                                        </span>
+                                    }
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                    inputProps={{
+                                        endAdornment: (
+                                            <InputAdornment position="end" className={classes.inputAdornment}>
+                                                <Face className={classes.inputAdornmentIcon}/>
+                                            </InputAdornment>
+                                        ),
+                                        onChange: event =>
+                                            this.change(event, "discourse_sso_secret", "discourse_sso_secret"),
+                                        value: this.state.discourse_sso_secret
+                                    }}
+                                />
+                                <CustomInput
+                                    success={this.state.nicknameState === "success"}
+                                    error={this.state.nicknameState === "error"}
+                                    labelText={
+                                        <span>
+                                          Discourse论坛SSO_Secret
+                                        </span>
+                                    }
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                    inputProps={{
+                                        endAdornment: (
+                                            <InputAdornment position="end" className={classes.inputAdornment}>
+                                                <Face className={classes.inputAdornmentIcon}/>
+                                            </InputAdornment>
+                                        ),
+                                        onChange: event =>
+                                            this.change(event, "discourse_sso_admin", "discourse_sso_admin"),
+                                        value: this.state.discourse_sso_admin
                                     }}
                                 />
                                 <div style={this.style.footer}>

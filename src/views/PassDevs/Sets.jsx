@@ -3,7 +3,7 @@ import React from "react";
 import withStyles from "material-ui/styles/withStyles";
 // material-ui icons
 import Assignment from "material-ui-icons/Assignment";
-import Face from "material-ui-icons/Face";
+import Settings from "material-ui-icons/Settings";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import ItemGrid from "components/Grid/ItemGrid.jsx";
@@ -258,7 +258,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -324,7 +324,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" style={this.style.inputAdornment}>
-                                                <Face style={this.style.inputAdornmentIcon}/>
+                                                <Settings style={this.style.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -346,7 +346,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -368,7 +368,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -390,7 +390,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -412,7 +412,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -434,7 +434,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -456,7 +456,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -478,7 +478,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -500,7 +500,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>
@@ -522,7 +522,7 @@ class Sets extends React.Component {
                                     inputProps={{
                                         endAdornment: (
                                             <InputAdornment position="end" className={classes.inputAdornment}>
-                                                <Face className={classes.inputAdornmentIcon}/>
+                                                <Settings className={classes.inputAdornmentIcon}/>
                                             </InputAdornment>
                                         ),
                                         onChange: event =>

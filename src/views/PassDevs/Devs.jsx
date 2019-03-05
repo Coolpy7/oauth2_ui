@@ -171,16 +171,14 @@ class ExtendedTables extends React.Component {
 
     loadData() {
         http.get("/api/v1/forms").then(res => {
-            if (res.data.ok) {
-                if (res.data.data.length > 0){
-                    this.setState({
-                        forms: res.data.data
-                    })
-                }
+            if (res.data.ok && res.data.data != null) {
+                this.setState({
+                    auths: res.data.data
+                })
             } else {
                 this.setState({
                     alertcolor: "danger",
-                    alertmsg: res.data.errmsg
+                    alertmsg: res.data.errmsg === "" ? res.data.errmsg : "没有任何记录"
                 });
                 this.showNotification("tc")
             }

@@ -93,7 +93,7 @@ var dashRoutes = [
         icon: Place,
         views: [
             {
-                path: "/passdevs/devs",
+                path: "/passdevs/dev",
                 name: "开发者申请审核",
                 mini: "DC",
                 component: Devs
